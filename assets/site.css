@@ -146,6 +146,7 @@ section{position:relative}
 
 /* ---------- Pastor ---------- */
 .pastor{display:grid;grid-template-columns:5fr 6fr;gap:clamp(30px,6vw,80px);align-items:center}
+.portraits{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .portrait{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;border:1px solid var(--line-2)}
 .portrait img{width:100%;height:100%;object-fit:cover}
 .portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,9,24,.85))}
@@ -281,12 +282,15 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px}
   .times,.grid-3{grid-template-columns:1fr 1fr}
   .bento .story,.bento .vm,.bento .vm + .vm,.bento .values{grid-column:span 6}
   .pastor,.sermons,.prayer,.contact{grid-template-columns:1fr}
-  .portrait{max-width:440px}
+  .portraits{max-width:600px}
   .events{grid-template-columns:1fr}
   .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
 }
 @media (max-width:600px){
   .wrap{width:calc(100% - 32px)}
+  .portraits{gap:10px}
+  .portrait figcaption{left:12px;right:12px;bottom:12px;font-size:.72rem}
+  .portrait figcaption strong{font-size:1rem}
   .times,.grid-3{grid-template-columns:1fr}
   .bento .story{padding:28px}
   .card{padding:22px}
