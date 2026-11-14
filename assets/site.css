@@ -78,11 +78,13 @@ p{margin:0}
 /* ---------- Hero ---------- */
 .hero{position:relative;min-height:100svh;display:grid;place-items:center;overflow:hidden;isolation:isolate;padding:130px 0 90px}
 .hero-video{position:absolute;inset:0;z-index:-3;pointer-events:none;overflow:hidden}
-.hero-video iframe{position:absolute;top:50%;left:50%;width:177.78vh;min-width:100%;height:56.25vw;min-height:100%;transform:translate(-50%,-50%) scale(1.15);border:0;opacity:.22;filter:saturate(.5) blur(3px)}
+.hero-video{background:#1a1020 url(jerusalem-sunrise.jpg) center/cover no-repeat}
+.hero-video video{width:100%;height:100%;object-fit:cover;object-position:center 60%;opacity:.9;filter:saturate(1.15) contrast(1.05)}
+.hero h1,.hero .lead,.hero-verse{text-shadow:0 2px 24px rgba(10,9,24,.7)}
 .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
-  radial-gradient(60% 50% at 50% 0%,rgba(139,108,255,.35),transparent 70%),
-  radial-gradient(40% 35% at 50% 40%,rgba(226,191,106,.18),transparent 70%),
-  linear-gradient(180deg,rgba(10,9,24,.55) 0%,rgba(10,9,24,.75) 55%,var(--bg) 100%)}
+  radial-gradient(55% 45% at 50% 42%,rgba(10,9,24,.55),transparent 75%),
+  radial-gradient(45% 30% at 70% 35%,rgba(255,170,80,.18),transparent 70%),
+  linear-gradient(180deg,rgba(10,9,24,.45) 0%,rgba(10,9,24,.15) 30%,rgba(10,9,24,.45) 62%,var(--bg) 100%)}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.35;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-size:28px 28px;mask-image:radial-gradient(70% 60% at 50% 40%,#000,transparent)}
 .hero-inner{text-align:center;display:flex;flex-direction:column;align-items:center}
 .hero-logo{width:clamp(96px,12vw,132px);border-radius:50%;box-shadow:0 0 0 1px rgba(226,191,106,.35),0 0 80px rgba(226,191,106,.35);margin-bottom:28px;animation:float 7s ease-in-out infinite}
@@ -303,5 +305,5 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal{opacity:1;transform:none}
-  .hero-video{display:none}
+  .hero-video video{display:none}
 }
