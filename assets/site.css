@@ -258,6 +258,9 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px}
 .foot nav a:hover{color:var(--text)}
 .legal{margin-top:46px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.84rem;color:var(--dim)}
 
+.visits{display:inline-flex;align-items:center}
+.visits img{height:20px;width:auto;border-radius:4px}
+
 /* ---------- WhatsApp FAB ---------- */
 .fab{position:fixed;right:18px;bottom:18px;z-index:40;display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 20px 0 16px;border-radius:999px;background:#25d366;color:#04230f;font-weight:600;box-shadow:0 16px 40px -12px rgba(37,211,102,.6);transition:transform .25s var(--ease)}
 .fab:hover{transform:translateY(-3px)}
